@@ -20,7 +20,7 @@ const Signup = () => {
                                                 <div className="d-flex flex-row align-items-center mb-4">
                                                     <i className="fas fa-user fa-lg me-3 fa-fw"></i>
                                                     <div className="form-outline flex-fill mb-0">
-                                                        <input type="text" id="name" className="form-control" autoComplete="off" />
+                                                        <input type="text" id="name" placeholder="Enter your name" className="form-control" autoComplete="off" />
                                                         <label className="form-label" htmlFor="name">Name</label>
                                                     </div>
                                                 </div>
@@ -28,7 +28,7 @@ const Signup = () => {
                                                 <div className="d-flex flex-row align-items-center mb-4">
                                                     <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                                     <div className="form-outline flex-fill mb-0">
-                                                        <input type="email" id="email" className="form-control" autoComplete="off" />
+                                                        <input type="email" id="email" placeholder="Enter your email" className="form-control" autoComplete="off" />
                                                         <label className="form-label" htmlFor="email">Email</label>
                                                     </div>
                                                 </div>
@@ -36,7 +36,7 @@ const Signup = () => {
                                                 <div className="d-flex flex-row align-items-center mb-4">
                                                     <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                                     <div className="form-outline flex-fill mb-0">
-                                                        <input type="number" id="phone" className="form-control" autoComplete="off" />
+                                                        <input type="number" id="phone" placeholder="Enter your phone number" className="form-control" autoComplete="off" />
                                                         <label className="form-label" htmlFor="phone">Mobile Number</label>
                                                     </div>
                                                 </div>
@@ -44,7 +44,7 @@ const Signup = () => {
                                                 <div className="d-flex flex-row align-items-center mb-4">
                                                     <i className="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                                     <div className="form-outline flex-fill mb-0">
-                                                        <input type="text" id="work" className="form-control" autoComplete="off" />
+                                                        <input type="text" id="work" placeholder="Enter your profession" className="form-control" autoComplete="off" />
                                                         <label className="form-label" htmlFor="work">Your Profession</label>
                                                     </div>
                                                 </div>
@@ -52,7 +52,7 @@ const Signup = () => {
                                                 <div className="d-flex flex-row align-items-center mb-4">
                                                     <i className="fas fa-lock fa-lg me-3 fa-fw"></i>
                                                     <div className="form-outline flex-fill mb-0">
-                                                        <input type="password" id="password" className="form-control" autoComplete="off" />
+                                                        <input type="password" id="password" placeholder="Enter password" className="form-control" autoComplete="off" />
                                                         <label className="form-label" htmlFor="password">Password</label>
                                                     </div>
                                                 </div>
@@ -60,21 +60,19 @@ const Signup = () => {
                                                 <div className="d-flex flex-row align-items-center mb-4">
                                                     <i className="fas fa-key fa-lg me-3 fa-fw"></i>
                                                     <div className="form-outline flex-fill mb-0">
-                                                        <input type="password" id="cpassword" className="form-control" autoComplete="off" />
+                                                        <input type="password" id="cpassword" placeholder="Confirm password" className="form-control" autoComplete="off" />
                                                         <label className="form-label" htmlFor="cpassword">Confirm password</label>
                                                     </div>
                                                 </div>
                                                 
-                                                <div className="d-flex flex-row align-items-center mb-4">
-                                                    <NavLink to="/login">Already Registered?</NavLink>
-                                                </div>
-
                                                 <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                                     <button type="submit" className="btn btn-primary btn-lg">Register</button>
                                                 </div>
-
+                                                <div className="text-center text-lg-start mt-4 pt-2">
+                                                    <p className="small fw-bold mt-2 pt-1 mb-0">Already Registered? <NavLink to="/login"
+                                                        className="link-success">Login</NavLink></p>
+                                                </div>
                                             </form>
-
                                         </div>
                                         <div className="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
                                             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
